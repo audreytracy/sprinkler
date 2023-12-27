@@ -1,0 +1,10 @@
+.first{
+    margin-top: 5em;
+}
+.second{
+    margin-top: 1em;
+}
+div{
+    display:flex;
+    justify-content:center;
+}

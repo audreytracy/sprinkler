@@ -1,0 +1,101 @@
+<h1>Define Custom Schedules</h1>
+<div class="container">
+
+
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title> {{names[0]}} </mat-card-title>
+        </mat-card-header>
+        <mat-card-actions>
+            <!-- <mat-icon class = "clickable" title = "edit zone details" (click)="toggle_deets()">list</mat-icon> -->
+            <mat-form-field>
+                <input matInput type="time" placeholder="default start time" [(ngModel)]="times[0]">
+              </mat-form-field>
+            <input type="text" placeholder="schedule name" [(ngModel)]="names[0]">
+            <input type="text" placeholder="zone_id:duration, zone_id:duration, ..." [(ngModel)]="data">
+            <button mat-button (click)="submit()">submit</button>
+        </mat-card-actions>
+    </mat-card>
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title> Schedule 2 </mat-card-title>
+        </mat-card-header>
+        <mat-card-actions>
+            <!-- <mat-icon class = "clickable" title = "edit zone details" (click)="toggle_deets()">list</mat-icon> -->
+            <input type="text" placeholder="zone_id:duration, zone_id:duration, ..." [(ngModel)]="data">
+            <button mat-button (click)="submit()">submit</button>
+        </mat-card-actions>
+    </mat-card>
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title> Schedule 3 </mat-card-title>
+        </mat-card-header>
+        <mat-card-actions>
+            <!-- <mat-icon class = "clickable" title = "edit zone details" (click)="toggle_deets()">list</mat-icon> -->
+            <input type="text" placeholder="zone_id:duration, zone_id:duration, ..." [(ngModel)]="data">
+            <button mat-button (click)="submit()">submit</button>
+        </mat-card-actions>
+    </mat-card>
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title> Schedule 4 </mat-card-title>
+        </mat-card-header>
+        <mat-card-actions>
+            <!-- <mat-icon class = "clickable" title = "edit zone details" (click)="toggle_deets()">list</mat-icon> -->
+            <input type="text" placeholder="zone_id:duration, zone_id:duration, ..." [(ngModel)]="data">
+            <button mat-button (click)="submit()">submit</button>
+        </mat-card-actions>
+    </mat-card>
+    <!-- <div class="header">Schedule 1</div>
+    <div class="header">Schedule 2</div>
+    <div class="header">Schedule 3</div>
+    <div class="header">Schedule 4</div>
+    <div>
+        <form>
+            <mat-form-field>
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="Schedule Name" value="Schedule 1">
+            </mat-form-field>
+        </form>
+    </div>
+    <div>
+        <form>
+            <mat-form-field>
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="Schedule Name" value="Schedule 1">
+            </mat-form-field>
+        </form>
+    </div>
+    <div>
+        <form>
+            <mat-form-field>
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="Schedule Name" value="Schedule 1">
+            </mat-form-field>
+        </form>
+    </div>
+    <div>
+        <form>
+            <mat-form-field>
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="Schedule Name" value="Schedule 1">
+            </mat-form-field>
+        </form>
+    </div>
+    <div cdkDropList class="list" (cdkDropListDropped)="drop1($event)">
+        <div class="zone" *ngFor="let zone of zones1['zones']" cdkDrag>
+            Zone {{zone}}
+            <input placeholder="duration" type="number" min="1" max="75" [(ngModel)]="durations[{zone}]">
+        </div>
+    </div>
+    <div cdkDropList class="list" (cdkDropListDropped)="drop2($event)">
+        <div class="zone" *ngFor="let zone of zones2['zones']" cdkDrag>{{zone}}</div>
+    </div>
+    <div cdkDropList class="list" (cdkDropListDropped)="drop3($event)">
+        <div class="zone" *ngFor="let zone of zones3['zones']" cdkDrag>{{zone}}</div>
+    </div>
+    <div cdkDropList class="list" (cdkDropListDropped)="drop4($event)">
+        <div class="zone" *ngFor="let zone of zones4['zones']" cdkDrag>{{zone}}</div>
+    </div> -->
+
+</div>

@@ -1,0 +1,10 @@
+<div class = "first">
+    <firebase-ui></firebase-ui>
+</div>
+<div class = "first" *ngIf="logged_in">
+    <p>Logged in as {{email}}</p>
+</div>
+<div *ngIf="logged_in">
+    <button mat-button (click)="logout()">Logout</button>
+    <button mat-button routerLink="/zones">Go to dashboard</button>
+</div>

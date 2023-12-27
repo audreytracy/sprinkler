@@ -1,0 +1,23 @@
+mat-toolbar{
+    background-color:#9ba5e0;
+    /* color:#6a79cf; */
+    display:flexbox;
+    justify-content: space-between;
+}
+
+.clickable{
+    text-decoration:none;
+    color:black;
+}
+
+div .clickable{
+    margin-left:0.5em;
+}
+
+.clickable:hover{
+    color:#3f51b5;
+}
+
+body{
+    background-color: antiquewhite;
+}

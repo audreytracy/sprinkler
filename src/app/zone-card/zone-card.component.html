@@ -1,0 +1,20 @@
+
+<mat-card [style.background-color]="zone.is_on ? '#9de8ab' : '#b7b7b7'">
+    <div class = "center">
+        <mat-card-header>
+            <mat-card-title>
+                Zone {{zone.id}}
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-subtitle>
+            <span *ngIf="zone.is_on">on</span><span *ngIf="!zone.is_on">off</span> since {{zone.toggled}}
+        </mat-card-subtitle>
+    </div>
+    <mat-card-actions>
+        <mat-icon class = "clickable" title = "edit zone details" (click)="toggle_deets()">list</mat-icon>
+        <button mat-button *ngIf="!zone.is_on" (click)="turn_on()">turn on zone</button>
+        <button mat-button *ngIf="zone.is_on" (click)="turn_off()">turn off zone</button>
+        <mat-icon class = "clickable" title = "delete zone" (click)="delete()">delete</mat-icon>
+    </mat-card-actions>
+    <app-details *ngIf="show_details" [zone]="zone"></app-details>
+</mat-card>

@@ -1,0 +1,30 @@
+.center{
+    display:flex;
+    justify-content:center;
+}
+
+mat-card-subtitle {
+    color: black;
+    margin-top:1em;
+    font-weight:400;
+}
+
+mat-card-actions{
+    display:flexbox;
+    justify-content: space-between;
+}
+
+button{
+    background-color:#b7b7b7;
+    color:black;
+}
+
+app-details{
+    padding:1em;
+    text-align:center;
+    font-weight: 100;
+}
+
+mat-card{
+    margin:1em 0.5em;
+}

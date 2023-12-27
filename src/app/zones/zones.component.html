@@ -1,0 +1,34 @@
+<div class="frame" *ngIf="!deviceConnected">
+    <div *ngIf="!ip_given">
+        <p>Connect device <a
+                href="https://raspberrytips.com/find-current-ip-raspberry-pi/"><mat-icon>help_outline</mat-icon></a></p>
+        <mat-form-field>
+            <mat-label>raspberry pi IP address</mat-label>
+            <input name="input" matInput #message maxlength="50" placeholder="Ex. 192.158.1.38" [(ngModel)]="ip">
+        </mat-form-field>
+        <button (click)="submit_ip()">Connect</button>
+    </div>
+    <div *ngIf="ip_given">
+        <iframe [src]="url" width="500" height="250" frameborder="0"></iframe>
+    </div>
+</div>
+<div *ngIf="deviceConnected">
+    <div class = "toolbar">
+
+        
+        <span><button class="pad" mat-button (click)="add()">Add Zone</button>      you have {{zones.length}} zones</span>
+        <mat-button-toggle-group class="right" [(ngModel)]="view_inline">
+            <mat-button-toggle [value]="true" aria-label="view group"><mat-icon>view_module</mat-icon></mat-button-toggle>
+            <mat-button-toggle [value]="false" aria-label="view list"><mat-icon>view_stream</mat-icon></mat-button-toggle>
+        </mat-button-toggle-group>
+    </div>
+    
+    <!-- <div>Selected value: {{view_inline}}</div> -->
+
+    <div class = "margins" >
+        <div [ngClass]="view_inline ? 'flex-container' : 'block-container'" *ngFor="let z of zones">
+            <app-zone-card [ngClass]="view_inline ? 'small' : 'big'" (refreshZonesList)="refresh()" [zone]="z"></app-zone-card>
+        </div>
+    </div>
+    
+</div>

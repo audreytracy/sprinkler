@@ -1,0 +1,65 @@
+.frame{
+    display:flex;
+    justify-content: center;
+    width:100%;
+}
+button{
+    margin-right:2em;
+}
+span{
+    font-size:small;
+    font-weight: 100;
+    margin-left: 5px;
+    display: inline-block;
+    line-height: 2;
+    vertical-align: bottom;
+}
+iframe{
+    padding-left:15em;
+    padding-top:2em;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.module{
+    display:inline-block;
+    margin: 2em 15vw 2em 15vw;
+    font-weight: bolder;
+    display:flex;
+    justify-content: space-between;
+}
+
+.toolbar{
+    margin: 2em 15vw 2em 15vw;
+    font-weight: bolder;
+    display:flex;
+    justify-content: space-between;
+}
+mat-form-field{
+    display:block;
+}
+
+.margins{
+    margin: 2em 15vw 2em 15vw;
+}
+
+.flex-container {
+    /* display: flex; */
+    display:inline-flex;
+
+  }
+/* 
+  .small{
+    width: calc(20% - 1px); /* Adjust the margin or padding value as needed 
+
+  }
+
+  .big{
+    flex: 0 0 100%;
+
+  } */
+  
+  .block-container {
+    display: block;
+  }

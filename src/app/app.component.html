@@ -1,0 +1,14 @@
+<mat-toolbar>
+    <button mat-button class = "clickable" routerLink = "zones">sprinklers</button>  
+    <button mat-button class = "clickable" (click)="GETTHATCAT()">GET THAT CAT!</button>
+     
+    <div>
+        <a title = "zone map" class = "clickable" routerLink = "zones"><mat-icon >map</mat-icon></a> 
+        <a title = "group schedules" class = "clickable" routerLink = "schedule"><mat-icon>timer</mat-icon></a> 
+        <a title = "account" class = "clickable" routerLink = "login"><mat-icon>account_circle</mat-icon></a> 
+        <a title = "settings" class = "clickable" routerLink = "login"><mat-icon>settings</mat-icon></a> 
+
+    </div>
+</mat-toolbar>
+
+<router-outlet></router-outlet>
